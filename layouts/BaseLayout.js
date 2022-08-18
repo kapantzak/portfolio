@@ -1,9 +1,12 @@
+import Header from "@/components/Header";
+import styles from "@/styles/BaseLayout.module.css";
+
 const BaseLayout = ({ children }) => {
   return (
     <>
-      <header>Header</header>
-      <main>{children}</main>
-      <footer>Footer</footer>
+      <Header />
+      <main className={styles.main}>{children}</main>
+      {/* <footer>Footer</footer> */}
     </>
   );
 };

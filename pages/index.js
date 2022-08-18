@@ -1,3 +1,11 @@
-export default function Home() {
-  return <h1>Web developer</h1>;
-}
+import Intro from "@/components/Intro";
+
+const Home = () => {
+  return (
+    <>
+      <Intro />
+    </>
+  );
+};
+
+export default Home;

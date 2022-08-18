@@ -1,0 +1,13 @@
+.wrapper {
+  display: flex;
+}
+
+.item {
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: "Sora", sans-serif;
+}
+
+.item:hover {
+  text-decoration: underline;
+}
