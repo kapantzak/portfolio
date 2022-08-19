@@ -1,5 +1,11 @@
+import PageHeader from "@/components/PageHeader";
+
 const Projects = () => {
-  return <h1>Projects</h1>;
+  return (
+    <>
+      <PageHeader>Projects</PageHeader>
+    </>
+  );
 };
 
 export default Projects;

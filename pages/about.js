@@ -1,5 +1,11 @@
+import PageHeader from "@/components/PageHeader";
+
 const About = () => {
-  return <h1>About</h1>;
+  return (
+    <>
+      <PageHeader>About</PageHeader>
+    </>
+  );
 };
 
 export default About;

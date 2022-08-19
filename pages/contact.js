@@ -1,5 +1,11 @@
+import PageHeader from "@/components/PageHeader";
+
 const Contact = () => {
-  return <h1>Contact</h1>;
+  return (
+    <>
+      <PageHeader>Contact</PageHeader>
+    </>
+  );
 };
 
 export default Contact;
