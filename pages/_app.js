@@ -1,6 +1,6 @@
 import BaseLayout from "@/layouts/BaseLayout";
-import "@/styles/globals.css";
-import "@/styles/styles.css";
+import "@/styles/globals.scss";
+import "@/styles/styles.scss";
 
 function MyApp({ Component, pageProps }) {
   return (

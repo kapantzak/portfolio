@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 .logo {
   display: flex;
   justify-content: center;
@@ -5,4 +7,5 @@
   border: 3px solid #fff;
   /* border-radius: 30%; */
   font-size: 2rem;
+  background-color: $black;
 }

@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import styles from "@/styles/BaseLayout.module.css";
+import styles from "@/styles/BaseLayout.module.scss";
 
 const BaseLayout = ({ children }) => {
   return (

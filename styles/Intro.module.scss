@@ -68,7 +68,7 @@
 
   .subText {
     padding: 0.8rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: normal;
     line-height: 1.5;
     text-align: center;
@@ -76,7 +76,7 @@
 }
 
 /* Tablets */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .subText {
     padding: 0.8rem;
     font-size: 1.7rem;

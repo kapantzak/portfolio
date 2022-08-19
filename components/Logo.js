@@ -1,6 +1,6 @@
 import Link from "next/link";
 import PropTypes from "prop-types";
-import styles from "@/styles/Logo.module.css";
+import styles from "@/styles/Logo.module.scss";
 
 const ActualLogo = ({ size }) => {
   const sizes = {
