@@ -7,7 +7,7 @@
     transform: translateY(10%);
     animation-name: slideUp;
     animation-duration: 1500ms;
-    animation-delay: 250ms;
+    animation-delay: 800ms;
     animation-fill-mode: forwards;
 }
 
@@ -16,8 +16,8 @@
     overflow: hidden;
     transform: translateX(-100%);
     animation-name: slideIn;
-    animation-duration: 150ms;
-    animation-delay: 0;
+    animation-duration: 550ms;
+    animation-delay: 250;
     animation-fill-mode: forwards;
   }
 
