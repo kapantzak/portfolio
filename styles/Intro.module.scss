@@ -1,0 +1,46 @@
+@import "./variables.scss";
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.left {
+    margin: 0;
+    padding: 0 0 0 1vw;
+    font-size: 12vw;
+    font-weight: 900;
+    line-height: 1;
+    transition: width 550ms ease-out;
+}
+
+.word {
+    display: flex;
+}
+
+.right {
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    font-size: 2.5vw;
+    background-color: $white;
+    color: $black;
+    overflow: hidden;
+    transition: width 550ms ease-out;
+}
+
+.rightInnerWrapper {
+    width: 60vh;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+}
+
+.rightMainText {
+    width: 10vw;
+}
+
+.rightSecondaryText {
+    opacity: 0;
+}
