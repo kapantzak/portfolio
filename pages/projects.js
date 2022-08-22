@@ -1,9 +1,9 @@
-import PageHeader from "@/components/PageHeader";
+import IntroText from "@/components/IntroText";
 
 const Projects = () => {
   return (
     <>
-      <PageHeader>Projects</PageHeader>
+      <IntroText>Projects</IntroText>
     </>
   );
 };

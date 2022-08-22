@@ -1,25 +1,18 @@
 .header {
-    padding: 2vw 1rem;
     margin: 0;
     font-family: "Sora", sans-serif;
-    font-size: 10vw;
     opacity: 0;
     transform: translateY(10%);
     animation-name: slideUp;
-    animation-duration: 1500ms;
-    animation-delay: 800ms;
     animation-fill-mode: forwards;
 }
 
-.textWrapper {
-    border-bottom: 1px solid #fff;
-    overflow: hidden;
+.horizontalRule {
     transform: translateX(-100%);
     animation-name: slideIn;
-    animation-duration: 550ms;
-    animation-delay: 250;
     animation-fill-mode: forwards;
-  }
+    animation-timing-function: ease-out;
+}
 
 @keyframes slideUp {
     from {

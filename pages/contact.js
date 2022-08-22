@@ -1,9 +1,9 @@
-import PageHeader from "@/components/PageHeader";
+import IntroText from "@/components/IntroText";
 
 const Contact = () => {
   return (
     <>
-      <PageHeader>Contact</PageHeader>
+      <IntroText>Contact</IntroText>
     </>
   );
 };

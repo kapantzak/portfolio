@@ -1,9 +1,9 @@
-import PageHeader from "@/components/PageHeader";
+import IntroText from "@/components/IntroText";
 
 const About = () => {
   return (
     <>
-      <PageHeader>About</PageHeader>
+      <IntroText>About</IntroText>
     </>
   );
 };
