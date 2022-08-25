@@ -1,70 +1,61 @@
-import { useState } from "react";
 import styles from "@/styles/Intro.module.scss";
+import useScrollPosition from "hooks/useScrollPosition";
+
+const calculateOpacity = ({ scrollPosition, disapearAtPosition }) =>
+  (disapearAtPosition - scrollPosition) / disapearAtPosition;
+
+const Fadeout = ({ scrollPosition, text, opacityPositions }) => {
+  return (text || "").split("").map((char, index) => {
+    const disapearAtPosition = opacityPositions[index];
+    const sign = index % 2 === 0 ? 1 : -1;
+    const rotationReducer = 50;
+
+    return (
+      <div
+        key={index}
+        style={{
+          opacity: calculateOpacity({
+            scrollPosition,
+            disapearAtPosition,
+          }),
+          transform: `rotate(${(scrollPosition / rotationReducer) * sign}deg)`,
+        }}
+      >
+        {char}
+      </div>
+    );
+  });
+};
 
 const Intro = () => {
-  //   const [rightSectionWidth, setRightSectionWidth] = useState(15);
-  const [inlineStyles, setInlineStyles] = useState({
-    leftSectionWidth: 85,
-    rightSectionWidth: 15,
-    letterOpacity: 1,
-  });
-
-  const handleRightSectionMouseEnter = () => {
-    setInlineStyles({
-      ...inlineStyles,
-      leftSectionWidth: 40,
-      rightSectionWidth: 60,
-      letterOpacity: 0,
-    });
-  };
-
-  const handleRightSectionMouseLeave = () => {
-    setInlineStyles({
-      ...inlineStyles,
-      leftSectionWidth: 85,
-      rightSectionWidth: 15,
-      letterOpacity: 1,
-    });
-  };
+  const scrollPosition = useScrollPosition();
 
   return (
-    <div className={styles.wrapper}>
+    <div
+      className={styles.wrapper}
+      style={{ transform: `translateY(${scrollPosition / 1.4}px)` }}
+    >
       <div
-        className={styles.left}
-        style={{ width: `${inlineStyles.leftSectionWidth}vw` }}
+        className={styles.word}
+        style={{ letterSpacing: `calc(1.5vw + ${scrollPosition / 10}px)` }}
       >
-        <div className={styles.word}>
-          <div>W</div>
-          <div>E</div>
-          <div>B</div>
-        </div>
-        <div className={styles.word}>
-          <div>D</div>
-          <div>E</div>
-          <div>V</div>
-          {"ELOPER".split("").map((char, index) => (
-            <div
-              key={index}
-              style={{
-                opacity: inlineStyles.letterOpacity,
-                transitionDuration: `${1000 / (index + 1)}ms`,
-              }}
-            >
-              {char}
-            </div>
-          ))}
-        </div>
+        <Fadeout
+          scrollPosition={scrollPosition}
+          text="WEB"
+          opacityPositions={[180, 150, 120].map((x) => x * 4)}
+        />
       </div>
       <div
-        className={styles.right}
-        style={{ width: `${inlineStyles.rightSectionWidth}vw` }}
-        onMouseEnter={handleRightSectionMouseEnter}
-        onMouseLeave={handleRightSectionMouseLeave}
+        className={styles.word}
+        style={{ letterSpacing: `calc(1.5vw + ${scrollPosition / 20}px)` }}
       >
-        <div className={styles.rightInnerWrapper}>
-          <div className={styles.rightMainText}>I build things for the web</div>
-          <div className={styles.rightSecondaryText}>test</div>
-        </div>
+        <Fadeout
+          scrollPosition={scrollPosition}
+          text="DEVELOPER"
+          opacityPositions={[280, 270, 260, 250, 240, 230, 220, 210, 200].map(
+            (x) => x * 4
+          )}
+        />
       </div>
     </div>
   );

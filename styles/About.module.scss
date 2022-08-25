@@ -1,0 +1,30 @@
+@import "./variables.scss";
+
+.wrapper {
+    margin-top: 50vh;
+    padding: 10vh 5vw;
+    min-height: 100vh;
+    background-color: $white;
+    color: $black;
+}
+
+.header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3vw;
+    font-weight: 100;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.techSection {
+    margin-top: 10vh;
+    height: 300vh;
+}
+
+.secondaryHeader {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5vw;
+    font-weight: 100;
+    line-height: 1.5;
+    text-transform: uppercase;
+}

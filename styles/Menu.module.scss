@@ -5,9 +5,10 @@
 .item {
   padding: 1rem;
   text-transform: uppercase;
-  font-family: "Sora", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.3rem;
 }
 
 .item:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
