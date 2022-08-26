@@ -36,7 +36,7 @@ const Intro = () => {
       style={{ transform: `translateY(${scrollPosition / 1.4}px)` }}
     >
       <div
-        className={styles.word}
+        className={styles.firstWord}
         style={{ letterSpacing: `calc(1.5vw + ${scrollPosition / 10}px)` }}
       >
         <Fadeout
@@ -46,7 +46,7 @@ const Intro = () => {
         />
       </div>
       <div
-        className={styles.word}
+        className={styles.secondWord}
         style={{ letterSpacing: `calc(1.5vw + ${scrollPosition / 20}px)` }}
       >
         <Fadeout
@@ -57,6 +57,7 @@ const Intro = () => {
           )}
         />
       </div>
+      <div className={styles.recording} />
     </div>
   );
 };
