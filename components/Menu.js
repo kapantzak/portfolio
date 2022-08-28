@@ -4,6 +4,9 @@ import styles from "@/styles/Menu.module.scss";
 const Menu = () => {
   return (
     <div className={styles.wrapper}>
+      <Link href="/">
+        <a className={styles.item}>Home</a>
+      </Link>
       <Link href="/about">
         <a className={styles.item}>About</a>
       </Link>

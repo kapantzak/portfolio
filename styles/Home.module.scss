@@ -1,0 +1,47 @@
+.introWrapper {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 15vh;
+}
+
+.introHeading {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1vw;
+    margin: 0;
+    padding: 0;
+}
+
+.textWeb {
+    font-size: 16vw;
+    line-height: 0.8;
+    opacity: 0;
+    animation-name: slideUp;
+    animation-duration: 1000ms;
+    animation-delay: 100ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.textDeveloper {
+    font-size: 13vw;
+    line-height: 1;
+    opacity: 0;
+    animation-name: slideUp;
+    animation-duration: 1000ms;
+    animation-delay: 150ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

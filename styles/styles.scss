@@ -3,4 +3,16 @@
 body {
   background-color: $black;
   color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.sticky {
+  position: sticky;
+  top: 100px;
+}
+
+.pageHeading {
+  font-size: 5vw;
+  text-transform: uppercase;
+  padding-left: 2rem;
 }

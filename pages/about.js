@@ -1,9 +1,7 @@
-import IntroText from "@/components/IntroText";
-
 const About = () => {
   return (
     <>
-      <IntroText>About</IntroText>
+      <h1 className="pageHeading">About</h1>
     </>
   );
 };

@@ -1,15 +1,31 @@
-import IntroText from "@/components/IntroText";
+import styles from "@/styles/Home.module.scss";
 
 const Home = () => {
   return (
     <>
-      <IntroText>Web developer</IntroText>
-      <IntroText tag="p" size="sm" ruleAnimationDelay={350}>
-        I build things for the web
-      </IntroText>
-      <IntroText tag="p" size="sm" ruleAnimationDelay={650}>
-        Javascript &#8226; React &#8226; Nextjs &#8226; HTML &#8226; CSS
-      </IntroText>
+      <div>
+        <div className={styles.introWrapper}>
+          <h1 className={styles.introHeading}>
+            <span className={styles.textWeb}>WEB</span>
+            <span className={styles.textDeveloper}>DEVELOPER</span>
+          </h1>
+        </div>
+        <div style={{ height: "1500px" }}></div>
+      </div>
+      <div style={{ backgroundColor: "#fff", color: "#000" }}>
+        <h2 className="sticky" style={{ fontSize: "7vw" }}>
+          I build things for the web
+        </h2>
+        <div style={{ height: "1500px" }}></div>
+        <div style={{ height: "1500px" }}></div>
+      </div>
+      <div>
+        <h2 className="sticky" style={{ fontSize: "7vw" }}>
+          I work as a senior frontend developer
+        </h2>
+        <div style={{ height: "1500px" }}></div>
+        <div style={{ height: "1500px" }}></div>
+      </div>
     </>
   );
 };
