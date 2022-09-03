@@ -1,21 +1,16 @@
 @import "./variables.scss";
 
 .wrapper {
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid $white;
   letter-spacing: 3px;
+  margin-top: 20px;
+  margin-right: 5vw;
 }
 
 .item {
   flex-grow: 1;
   padding: 1rem;
   text-align: center;
-  text-transform: uppercase;
   font-family: "Sora", sans-serif;
-}
-
-.item:not(:last-of-type) {
-  border-right: 1px solid $white;
 }
