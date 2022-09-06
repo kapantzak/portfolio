@@ -1,7 +1,9 @@
 @import "./variables.scss";
 
 html, body {
-  background-color: $black;
+  // background-color: $black;
+  background: linear-gradient(-45deg, $white, $black);
+  background-size: 200% 200%;
   color: $white;
   font-family: 'Montserrat', sans-serif;
 }
