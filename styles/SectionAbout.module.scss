@@ -26,7 +26,7 @@
 }
 
 .quote {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 400;
     padding: 0 5vw;
 }
@@ -38,4 +38,24 @@
     margin-left: -0.5px;
     bottom: 0;
     background-color: $black;
+}
+
+.rightWrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.techWrapper {
+    width: 100%;
+    padding: 2rem 0;
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-align: center;
+    background-color: $black;
+    color: $white;
+    overflow: hidden;
 }

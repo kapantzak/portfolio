@@ -15,6 +15,10 @@ const SectionAbout = () => {
 
   const quoteProgress = adjustProgress(0, 0.1, progress);
   const separatorProgress = adjustProgress(0, 0.2, progress);
+  const jsProgress = adjustProgress(0.2, 0.3, progress);
+  const reactProgress = adjustProgress(0.3, 0.4, progress);
+  const nextProgress = adjustProgress(0.4, 0.5, progress);
+  const htmlProgress = adjustProgress(0.5, 0.6, progress);
 
   return (
     <section ref={wrapperRef} className={styles.wrapper}>
@@ -35,7 +39,38 @@ const SectionAbout = () => {
           style={{ top: `${100 - separatorProgress * 100}%` }}
         />
         <div className={styles.rightWrapper}>
-          <div className={styles.firstColumn}>Javascript</div>
+          <div
+            className={styles.techWrapper}
+            style={{
+              transform: `translateX(-${100 - jsProgress * 100}%)`,
+            }}
+          >
+            JAVASCRIPT
+          </div>
+          <div
+            className={styles.techWrapper}
+            style={{
+              transform: `translateX(-${100 - reactProgress * 100}%)`,
+            }}
+          >
+            REACT
+          </div>
+          <div
+            className={styles.techWrapper}
+            style={{
+              transform: `translateX(-${100 - nextProgress * 100}%)`,
+            }}
+          >
+            NEXTJS
+          </div>
+          <div
+            className={styles.techWrapper}
+            style={{
+              transform: `translateX(-${100 - htmlProgress * 100}%)`,
+            }}
+          >
+            HTML &amp; CSS
+          </div>
         </div>
       </div>
       <div style={{ height: "15000px" }}></div>
